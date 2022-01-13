@@ -17,7 +17,7 @@
   },
   "types": "./dist/types.d.ts",
   "scripts": {
-    "build": "vite build && tsc --emitDeclarationOnly"
+    "build": "vite build && tsc --emitDeclarationOnly && cp ./src/app/*ts dist/"
   },
   "repository": {
     "type": "git",
