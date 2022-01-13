@@ -1,0 +1,26 @@
+{
+  "name": "satha",
+  "version": "0.0.1",
+  "description": "An easy to use localStorage wrapper.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sathajs/satha.git"
+  },
+  "keywords": [
+    "local-storage",
+    "session-storage",
+    "storage",
+    "localStorage",
+    "sessionStorage",
+    "local storage",
+    "session storage",
+    "js",
+    "store"
+  ],
+  "author": "siddacool",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sathajs/satha/issues"
+  },
+  "homepage": "https://satha.netlify.app/"
+}

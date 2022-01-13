@@ -1,8 +1,11 @@
 {
   "name": "@satha/core",
   "version": "2.0.0",
+  "description": "An easy to use localStorage wrapper.",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
@@ -16,6 +19,27 @@
   "scripts": {
     "build": "vite build && tsc --emitDeclarationOnly"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sathajs/satha.git"
+  },
+  "keywords": [
+    "local-storage",
+    "session-storage",
+    "storage",
+    "localStorage",
+    "sessionStorage",
+    "local storage",
+    "session storage",
+    "js",
+    "store"
+  ],
+  "author": "siddacool",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sathajs/satha/issues"
+  },
+  "homepage": "https://satha.netlify.app/",
   "devDependencies": {
     "typescript": "^4.4.4",
     "vite": "^2.7.2"
