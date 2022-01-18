@@ -1,7 +1,7 @@
 {
   "name": "@satha/core",
   "version": "2.0.0",
-  "description": "A reactive localStorage wrapper.",
+  "description": "An easy to use, reactive localStorage wrapper.",
   "files": [
     "dist",
     "README.md",

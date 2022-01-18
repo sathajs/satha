@@ -1,7 +1,7 @@
 {
   "name": "satha",
   "version": "0.0.1",
-  "description": "An easy to use localStorage wrapper.",
+  "description": "An easy to use, reactive localStorage wrapper.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sathajs/satha.git"
