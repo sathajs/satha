@@ -1,7 +1,7 @@
 {
   "name": "@satha/core",
   "version": "2.0.0",
-  "description": "An easy to use localStorage wrapper.",
+  "description": "A reactive localStorage wrapper.",
   "files": [
     "dist",
     "README.md",
@@ -17,7 +17,8 @@
   },
   "types": "./dist/types.d.ts",
   "scripts": {
-    "build": "vite build && tsc --emitDeclarationOnly && cp ./src/app/*ts dist/"
+    "dev": "vite",
+    "build": "vite build && tsc --emitDeclarationOnly"
   },
   "repository": {
     "type": "git",
