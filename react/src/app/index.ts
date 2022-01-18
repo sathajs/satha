@@ -6,13 +6,27 @@ interface ISubscribeCallback {
   (state: StoreState): void;
 }
 
-interface IStore {
+interface ICreateStore {
   get: () => StoreState;
+  set: (state: StoreState) => StoreState;
+  reset: () => void;
   subscribe: (callback: ISubscribeCallback) => string;
   unsubscribe: (subscribeId: string) => void;
 }
 
-export const useStore = (store: IStore) => {
+const storePlaceHolder = {
+  get() {
+    return '';
+  },
+  set() {},
+  reset() {},
+  subscribe() {
+    return 'randomId';
+  },
+  unsubscribe() {},
+};
+
+export const useStore = (store: ICreateStore = storePlaceHolder) => {
   const [value, setValue] = useState(store.get());
 
   useEffect(() => {

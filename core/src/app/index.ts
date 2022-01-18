@@ -13,6 +13,14 @@ export interface ISubscribeCallback {
   (state: StoreState): void;
 }
 
+export interface ICreateStore {
+  get: () => StoreState;
+  set: (state: StoreState) => StoreState;
+  reset: () => void;
+  subscribe: (callback: ISubscribeCallback) => string;
+  unsubscribe: (subscribeId: string) => void;
+}
+
 const storeDefault = {
   storageName: 'satha-store-001',
 };
@@ -39,7 +47,7 @@ export const createStore = (
   name: StoreName,
   state: StoreState,
   config: IStoreConfig = storeConfigDefault,
-) => {
+): ICreateStore => {
   if (typeof localStorage === 'undefined') {
     return {
       get() {
@@ -56,7 +64,18 @@ export const createStore = (
 
   if (!name || (name && typeof name !== 'string')) {
     console.error('createStore: name is a "string" value');
-    return;
+
+    return {
+      get() {
+        return '';
+      },
+      set() {},
+      reset() {},
+      subscribe() {
+        return 'randomId';
+      },
+      unsubscribe() {},
+    };
   }
 
   const storageType = config.storageType ? config.storageType : 'local';
