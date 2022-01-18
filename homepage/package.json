@@ -1,0 +1,17 @@
+{
+  "name": "satha-website-astro",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "astro": "^0.21.13",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "prismjs": "^1.25.0"
+  }
+}

@@ -1,0 +1,90 @@
+---
+import FooterLink from '~/lib/FooterLink.svelte';
+import Sidebar from '~/lib/Sidebar.svelte';
+import SocialLinks from '~/lib/SocialLinks.svelte';
+import Instructions from '~/lib/Instructions.svelte';
+
+console.log('Astro on');
+---
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Satha</title>
+    <meta name="description" content="An easy to use localStorage wrapper" />
+    <meta property="og:title" content="Satha" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://satha.netlify.app/" />
+    <meta property="og:image" content="https://satha.netlify.app/cover-og.jpg" />
+    <meta
+      property="og:description"
+      content="A tiny, reactive, easy to use, wrapper for localStorage."
+    />
+    <link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/base.css')} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+
+<body>
+<main>
+  <header>
+    <a href="#">
+      <h1>Satha</h1>
+    </a>
+  </header>
+
+  <p class="description">
+   A tiny, reactive, easy to use, wrapper for localStorage.
+  </p>
+
+  <SocialLinks />
+
+  <section>
+    <br />
+    <Instructions />
+  </section>
+
+  <SocialLinks />
+  <FooterLink />
+</main>
+<Sidebar />
+</body>
+
+</html>
+
+<style lang="scss">
+  header {
+    a {
+      color: inherit;
+      text-decoration: initial;
+      display: inline-block;
+    }
+
+    h1 {
+      display: inline-block;
+    }
+  }
+
+  main {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 50px;
+    @media (min-width: 900px) {
+      max-width: 700px;
+      margin-left: auto;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-right: auto;
+    }
+  }
+</style>

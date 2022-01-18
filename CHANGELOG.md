@@ -1,3 +1,11 @@
+## [2.0.0]
+
+### Breaking changes
+
+- useStorage replaced with createStore
+- createLocalStorage removed
+- added: setDefaultStorageName to replaced createLocalStorage
+
 ## [1.1.3]
 
 ### Misc
