@@ -1,3 +1,3 @@
 # Satha
 
-An easy to use localStorage wrapper.
+A tiny, reactive, easy to use, wrapper for localStorage.
