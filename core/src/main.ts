@@ -1,6 +1,6 @@
 import './style.css';
 import { numberStore, numberSessionStore } from './store';
-import { setDefaultStorageName, getDefaultStorageName } from './app/utils';
+import { setDefaultStorageName, getDefaultStorageName } from './app';
 
 setDefaultStorageName('satha-store-1');
 
